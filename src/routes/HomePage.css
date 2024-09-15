@@ -1,0 +1,77 @@
+/* General container styling */
+.home-container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Services container to hold the cards */
+  .services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  /* Individual service card styling */
+  .service-card {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 1.1rem;
+    color: #333;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .service-card:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Chat, FAQs, and About specific styling */
+  .chat, .faqs, .about {
+    background-color: #ffcccb; /* Example color, you can change */
+  }
+  
+  /* Image styling inside translator card */
+  .translator img {
+    width: 60px;   /* Adjust as necessary */
+    height: 60px;  /* Keep proportions */
+    object-fit: contain;  /* Ensures the image maintains its aspect ratio */
+  }
+  
+  .service-link{
+    text-decoration: none;
+  }
+
+  /* Responsive design for smaller screens */
+  @media (max-width: 768px) {
+    .services-container {
+      flex-direction: column;
+      gap: 15px;
+    }
+  
+    .service-card {
+      width: 120px;
+      height: 120px;
+    }
+  
+    .translator img {
+      width: 50px;
+      height: 50px;
+    }
+  }
+  

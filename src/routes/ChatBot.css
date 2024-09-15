@@ -1,0 +1,147 @@
+/* General Chat Container */
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    padding: 20px;
+    background-color: #f4f4f9;
+  }
+  
+  /* Chat Box Styling */
+  .chat-box {
+    flex: 1;
+    overflow-y: auto;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  .chat-message {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    width: fit-content;
+  }
+  
+  .chat-message.bot {
+    background-color: #f1f0f0;
+    align-self: flex-start;
+  }
+  
+  .chat-message.user {
+    background-color: #007bff;
+    color: white;
+    align-self: flex-end;
+  }
+  
+  /* Input Box Styling */
+  .input-box {
+    display: flex;
+    margin-top: 10px;
+  }
+  
+  .input-box input {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  
+  .input-box button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .input-box button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Fruit Section Styling */
+  .fruit-section {
+    margin-top: 20px;
+  }
+  
+  /* Fruit List Styling */
+  .fruit-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  
+  .fruit-card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 10px;
+    width: 30%;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .fruit-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Responsive Image Styling */
+  .fruit-card img {
+    width: 100%;
+    height: auto;
+    object-fit: contain; /* Ensures the image scales nicely without distortion */
+    max-height: 150px;   /* Optional: Limit the max height */
+    border-radius: 10px;
+  }
+  
+  /* Fruit Details Styling */
+  .fruit-details {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .fruit-details img {
+    width: 50%;
+    height: auto;
+    object-fit: contain; /* Ensures the image doesn't get distorted */
+    border-radius: 10px;
+  }
+  
+  /* Suggested Questions Section */
+  .suggested-questions {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-top: 1px solid #ddd;
+  }
+  
+  .suggested-questions h4 {
+    margin-bottom: 10px;
+  }
+  
+  .suggestions-list button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .suggestions-list button:hover {
+    background-color: #0056b3;
+  }
+  
